@@ -1,0 +1,27 @@
+Design Memo: Social Network
+
+A graph is the right structure to represent a social network because 
+people are connected to each other through friendships. Each person 
+represents a node, and each friendship represents an edge. A graph 
+makes it easy to show how people are connected, even when they have 
+many different friends.
+A list would not work as well because it only stores information in
+a sequence. It would be harder to keep track of which people are 
+friends with each other. A tree would also be less suitable because
+it normally has a parent-child structure. In a social network, 
+one person can have many friends, and those friends can also be 
+connected to other people.
+For this assignment, I used an adjacency list to represent the 
+graph. Each person has a list containing their friends. One 
+advantage of this approach is that adding a friendship is simple. 
+I only need to add each person to the other's friends list. 
+It also makes printing the network easy because I can loop 
+through each person and display their friends.
+One trade-off I noticed is that adding a friendship requires 
+updating two lists because the friendship works in both directions. 
+Also, checking whether two people are already friends takes time as 
+the list gets larger. However, an adjacency list is a good choice 
+for this project because it saves space when people only have a few 
+friends compared to the total number of people in the network.
+Overall, graphs provide a simple and effective way to represent 
+real-life social connections.
